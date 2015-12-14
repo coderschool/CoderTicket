@@ -6,24 +6,12 @@
   padding-top: 80px;
   padding-bottom: 80px;
   width: 100%;
+  color: white;
   h2 {
-    border-bottom-color: rgb(255, 255, 255);
-    border-left-color: rgb(255, 255, 255);
-    border-right-color: rgb(255, 255, 255);
-    border-top-color: rgb(255, 255, 255);
-    color: rgb(255, 255, 255);
-    font-size: 26px;
+    font-size: 28px;
     font-weight: bold;
-    height: 39px;
-    line-height: 39px;
-    outline-color: rgb(255, 255, 255);
     text-align: center;
     text-shadow: rgba(0, 0, 0, 0.498039) 2px 3px 6px;
-    width: 1140px;
-    -webkit-column-rule-color: rgb(255, 255, 255);
-    -webkit-text-emphasis-color: rgb(255, 255, 255);
-    -webkit-text-fill-color: rgb(255, 255, 255);
-    -webkit-text-stroke-color: rgb(255, 255, 255);
   } 
   input {
     margin: auto;
@@ -59,7 +47,6 @@
     z-index: 2;
     -webkit-appearance: none;
     -webkit-column-rule-color: rgb(85, 85, 85);
-    perspective-origin: 351px 27px;
     -webkit-text-emphasis-color: rgb(85, 85, 85);
     -webkit-text-fill-color: rgb(85, 85, 85);
     -webkit-text-stroke-color: rgb(85, 85, 85);
