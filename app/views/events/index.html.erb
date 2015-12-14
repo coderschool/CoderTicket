@@ -1,0 +1,19 @@
+<div class='events-header' style='background-image: url(<%= header_background_image_url %>)'>
+  <div class="container">
+    <h2> Discover upcoming events </h2>
+    <form>
+      <input type="text" class="form-control" name="search" placeholder="Search for events, shows, courses...">
+    </form>
+  </div>
+</div>
+
+<div class="container-fluid events-list">
+    <% @events.in_groups_of(3) do |g| %>
+      <div class="row">
+        <% g.compact.each do |e| %>
+            <%= render partial: 'card', locals: {event: e} %>
+        <% end %>
+      </div>  
+    <% end %>
+  </div>
+</div>

@@ -1,0 +1,78 @@
+// Place all the styles related to the events controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.events-header {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  width: 100%;
+  h2 {
+    border-bottom-color: rgb(255, 255, 255);
+    border-left-color: rgb(255, 255, 255);
+    border-right-color: rgb(255, 255, 255);
+    border-top-color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    font-size: 26px;
+    font-weight: bold;
+    height: 39px;
+    line-height: 39px;
+    outline-color: rgb(255, 255, 255);
+    text-align: center;
+    text-shadow: rgba(0, 0, 0, 0.498039) 2px 3px 6px;
+    width: 1140px;
+    -webkit-column-rule-color: rgb(255, 255, 255);
+    -webkit-text-emphasis-color: rgb(255, 255, 255);
+    -webkit-text-fill-color: rgb(255, 255, 255);
+    -webkit-text-stroke-color: rgb(255, 255, 255);
+  } 
+  input {
+    margin: auto;
+    margin-top: 20px;
+    border-bottom-color: rgb(85, 85, 85);
+    border-bottom-left-radius: 2px;
+    border-bottom-style: none;
+    border-bottom-width: 0px;
+    border-left-color: rgb(85, 85, 85);
+    border-left-style: none;
+    border-left-width: 0px;
+    border-right-color: rgb(85, 85, 85);
+    border-right-style: none;
+    border-right-width: 0px;
+    border-top-color: rgb(85, 85, 85);
+    border-top-left-radius: 2px;
+    border-top-style: none;
+    border-top-width: 0px;
+    color: rgb(85, 85, 85);
+    display: block;
+    font-size: 17px;
+    height: 54px;
+    line-height: 24.2857px;
+    max-width: 100%;
+    outline-color: rgb(85, 85, 85);
+    padding-bottom: 0px;
+    padding-left: 19px;
+    padding-right: 19px;
+    padding-top: 0px;
+    position: relative;
+    transition-property: none;
+    width: 702px;
+    z-index: 2;
+    -webkit-appearance: none;
+    -webkit-column-rule-color: rgb(85, 85, 85);
+    perspective-origin: 351px 27px;
+    -webkit-text-emphasis-color: rgb(85, 85, 85);
+    -webkit-text-fill-color: rgb(85, 85, 85);
+    -webkit-text-stroke-color: rgb(85, 85, 85);
+  }
+}
+
+.events-list {
+    margin-top: 20px;
+    padding: 20px 30px;
+    background-color: $gray-lighter;
+    .card {
+        img {
+            max-width: 100%;
+        }
+    }
+}
