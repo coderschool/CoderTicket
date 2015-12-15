@@ -1,0 +1,50 @@
+<div class="container-fluid no-pad events-detail">
+  <div class="row no-pad">
+    <div class="col-md-3 sidebar">
+      <p>
+        <%= fa_icon 'ticket' %>
+        Price
+      </p>
+      <div class="ticket-list">
+        <% @event.ticket_types.each do |ticket_type| %>
+          <div class="pull-left">
+            <%= ticket_type.name %>
+          </div>
+          <div class="pull-right price">
+            <%= number_to_currency(ticket_type.price, unit: 'VND', precision: 0) %>
+          </div>
+          <div class="clearfix"></div>
+        <% end %>
+        <button class="btn btn-lg btn-block btn-warning"> BOOK NOW </button>
+      </div>
+    </div>
+    <div class="col-md-9 event-content">
+      <%= image_tag @event.hero_image_url, class: 'hero-img' %>
+      <div class="container">
+        <h3> <%= @event.name %> </h3>
+        <div class="pull-left">
+          <%= fa_icon 'clock-o' %>
+        </div>
+        <div class="time-details"> 
+          <%= @event.starts_at.strftime('%A, %d %b %Y %l:%M %p') %> 
+        </div>
+
+        
+
+        <div class="pull-left">
+          <%= fa_icon 'map-marker' %>
+        </div>
+        <div class="venue-details">
+         <%= @event.venue.name %>
+         <br/>
+         <%= @event.venue.full_address %>
+        </div>
+
+        <div>
+          <%= @event.extended_html_description.html_safe %>
+        </div>
+
+      </div>  
+    </div>
+  </div>
+</div>

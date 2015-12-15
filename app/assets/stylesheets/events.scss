@@ -63,3 +63,48 @@
         }
     }
 }
+
+.events-detail {
+    .sidebar {
+        padding-top: 80px;
+        color: rgb(233, 237, 240);
+        background-color: #303B46;
+        float: left;
+        position: fixed;
+        min-height: 700px;
+        height: 100%;
+        p {
+            text-align: center;
+            text-transform: uppercase;
+            font-size: larger;
+            font-family: 'serif';
+            i.fa {
+                font-size: 30px;
+            }
+        }
+        .ticket-list {
+            padding-left: 40px;
+            padding-right: 40px;
+            button {
+                margin-top: 40px;
+            }
+        }
+    }
+    .event-content {
+        float: right;
+        img {
+            max-width: 100%;
+            &.hero-img {
+                max-height: 400px;
+            }
+        }
+        .container {
+            margin-left: 50px;
+            margin-top: 30px;
+            .time-details, .venue-details {
+                margin-left: 20px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}

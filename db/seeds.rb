@@ -20,7 +20,7 @@ dalat = Venue.create({
   region: Region.find_by(name: 'Lam Dong')
 })
 
-Event.create({
+e = Event.create({
   name: 'Việt Nam Thử Thách Chiến Thắng', 
   starts_at: DateTime.parse('Fri, 11 Mar 2016 7:00 AM+0700'),
   ends_at: DateTime.parse('Sun, 13 Mar 2016 3:00 PM+0700'),
@@ -36,6 +36,9 @@ Event.create({
     <p style="text-align:center"><span style="font-size:16px"><strong><span style="background-color:transparent; color:rgb(0, 0, 0)">www.vietnamvictorychallenge.com. </span></strong></span></p>
   DESC
 })
+e.ticket_types << TicketType.create(name: '2016 Việt Nam Thử Thách Chiến Thắng dành cho những tay đua đăng kí sớm.', price: 500000, max_quantity: 95)
+e.ticket_types << TicketType.create(name: 'Việt Nam Thử Thách Chiến Thắng ( Giá chính thức)', price: 2000000, max_quantity: 5)
+
 
 # Second event:
 # Dan Truong
@@ -45,8 +48,7 @@ dan_venue = Venue.create({
   region: Region.find_by(name: 'Ho Chi Minh')
 })
 
-
-Event.create({
+e = Event.create({
   name: 'Cảm ơn Đời - Live Concert Đan Trường', 
   venue: dan_venue,
   category: Category.find_by(name: 'Entertainment'),
@@ -115,6 +117,12 @@ Event.create({
   DESC
 })
 
+
+e.ticket_types << TicketType.create(name: 'Vé loại A', price: 500000, max_quantity: 10)
+e.ticket_types << TicketType.create(name: 'Vé loại B', price: 300000, max_quantity: 50)
+e.ticket_types << TicketType.create(name: 'Vé loại C', price: 200000, max_quantity: 100)
+e.ticket_types << TicketType.create(name: 'Vé loại D', price: 150000, max_quantity: 200)
+
 # Third event - Merry Christmas Never Alone
 
 gap = Venue.create({
@@ -123,7 +131,7 @@ gap = Venue.create({
   region: Region.find_by(name: 'Ha Noi')
   })
 
-Event.create({
+e = Event.create({
   name: 'Merry Christmas Never Alone',
   starts_at: DateTime.parse('Thu, 24 Dec 2015, 8:00 PM+0700'),
   ends_at: DateTime.parse('Thu, 24 Dec 2015, 11:00 PM+0700'),
@@ -149,3 +157,4 @@ Event.create({
                         
   DESC
 })  
+e.ticket_types << TicketType.create(name: 'General', price: 99000, max_quantity: 1000)
