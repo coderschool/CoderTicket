@@ -8,7 +8,7 @@ Time spent: **X** hours
 
 URL: **Insert your Heroku URL here**
 
-SimpleCov Test Coverage: ** Insert percentage or link to report here **
+SimpleCov Test Coverage: **Insert percentage or link to report here**
 
 ## User Stories
 
