@@ -55,12 +55,25 @@
 
 .events-list {
     margin-top: 20px;
-    padding: 20px 30px;
+    padding: 30px 150px;
     background-color: $gray-lighter;
     .card {
+        margin-bottom: 20px;
         img {
             max-width: 100%;
         }
+        &:hover {
+            box-shadow: 0 0 8px $gray;
+            transition: 0.5s;
+        }
+        .card-title {
+            font-size: 18px;
+            font-weight: bold;
+        }
+    }
+    a {
+        text-decoration: none;
+        color: $gray-dark;
     }
 }
 
@@ -89,14 +102,15 @@
                 margin-top: 40px;
             }
         }
+        a {
+            text-decoration: none;
+            color: white;
+        }
     }
     .event-content {
         float: right;
-        img {
-            max-width: 100%;
-            &.hero-img {
-                max-height: 400px;
-            }
+        .hero-img {
+            min-height: 400px;
         }
         .container {
             margin-left: 50px;
@@ -104,6 +118,13 @@
             .time-details, .venue-details {
                 margin-left: 20px;
                 margin-bottom: 20px;
+            }
+            .img-spacer {
+                text-align: center;
+                margin: 60px;
+            }
+            .extended-description {
+                margin-top: 20px;
             }
         }
     }

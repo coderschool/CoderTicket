@@ -1,0 +1,9 @@
+<div class="container tickets-buy">
+  <h2> <%= @event.name %> </h2>
+  <ul>
+    <% @event.ticket_types.each do |type| %>
+      <li> <%= type.name %> </li>
+    <% end %> 
+  </ul>
+</div>  
+

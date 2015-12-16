@@ -15,11 +15,13 @@
           </div>
           <div class="clearfix"></div>
         <% end %>
-        <button class="btn btn-lg btn-block btn-warning"> BOOK NOW </button>
+        <%= link_to new_event_ticket_path(@event) do %>
+          <button class='btn btn-lg btn-block btn-warning'> BOOK NOW </button>
+        <% end %>
       </div>
     </div>
     <div class="col-md-9 event-content">
-      <%= image_tag @event.hero_image_url, class: 'hero-img' %>
+      <div class="hero-img hidden-sm-down" style="background-image: url(<%= @event.hero_image_url %>); background-size: cover;"> </div>
       <div class="container">
         <h3> <%= @event.name %> </h3>
         <div class="pull-left">
@@ -40,7 +42,10 @@
          <%= @event.venue.full_address %>
         </div>
 
-        <div>
+        <div class="img-spacer">
+          <%= image_tag 'shadow-top.png' %>
+        </div>
+        <div class="extended-description">
           <%= @event.extended_html_description.html_safe %>
         </div>
 
