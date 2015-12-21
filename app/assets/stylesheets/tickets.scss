@@ -1,3 +1,41 @@
 // Place all the styles related to the Tickets controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.tickets-buy {
+  background-color: $gray-lightest;
+  padding-bottom: 80px;
+  .tickets-header {
+    padding-top: 60px;
+    padding-bottom: 30px;
+    background-image: image-url('header-bg-02.jpg');
+    background-size: cover;
+    text-shadow: 2px 3px 6px rgba(0, 0, 0, 0.5);  
+    font-size: 14px;
+    color: $gray-lighter;
+    h3 {
+      font-size: 21px;
+      font-weight: 800;
+      color: white; 
+      padding-top: 10px;
+      padding-bottom: 20px;
+    }
+  }
+  .venue-details, .time-details {
+    margin-left: 40px;
+  }
+  table {
+    font-size: 14px;    
+    th {
+      color: rgb(51, 51, 51);
+      font-weight: 800;
+      text-transform: uppercase;
+      border-bottom: 1px solid rgb(178, 178, 178);
+    }
+    td {
+      border-top: 1px dashed rgb(178, 178, 178);
+    }
+    margin-top: 40px;
+    margin-bottom: 80px;
+  }
+}

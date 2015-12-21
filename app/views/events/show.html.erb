@@ -5,18 +5,22 @@
         <%= fa_icon 'ticket' %>
         Price
       </p>
+      <h1> Hot Events </h1>
       <div class="ticket-list">
         <% @event.ticket_types.each do |ticket_type| %>
-          <div class="pull-left">
-            <%= ticket_type.name %>
-          </div>
-          <div class="pull-right price">
-            <%= number_to_currency(ticket_type.price, unit: 'VND', precision: 0) %>
+          <div class="row">
+            <div class="col-md-6">
+              <%= ticket_type.name %>
+            </div>
+
+            <div class="col-md-6 price text-right">
+              <%= number_to_currency(ticket_type.price, unit: 'VND', precision: 0) %>
+            </div>
           </div>
           <div class="clearfix"></div>
         <% end %>
         <%= link_to new_event_ticket_path(@event) do %>
-          <button class='btn btn-lg btn-block btn-warning'> BOOK NOW </button>
+          <button class='btn btn-lg btn-block btn-danger'> BOOK NOW </button>
         <% end %>
       </div>
     </div>

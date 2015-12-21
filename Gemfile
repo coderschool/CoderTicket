@@ -31,6 +31,7 @@ gem 'simple_form'
 gem 'quiet_assets'
 gem 'better_errors', group: :development
 gem 'font-awesome-rails'
+gem 'font-kit-rails', '~> 1.2.0'
 
 # Use Unicorn as the app server
 # gem 'unicorn'

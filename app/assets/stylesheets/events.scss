@@ -8,7 +8,7 @@
   width: 100%;
   color: white;
   h2 {
-    font-size: 28px;
+    font-size: 26px;
     font-weight: bold;
     text-align: center;
     text-shadow: rgba(0, 0, 0, 0.498039) 2px 3px 6px;
@@ -98,8 +98,13 @@
         .ticket-list {
             padding-left: 40px;
             padding-right: 40px;
+            font-size: 14px;
             button {
                 margin-top: 40px;
+            }
+            .price {
+                font-weight: bold;
+                font-size: 18px;
             }
         }
         a {
@@ -109,6 +114,11 @@
     }
     .event-content {
         float: right;
+        h3 {
+            font-weight: bold;
+            font-size: 25px;
+            margin-bottom: 30px;
+        }
         .hero-img {
             min-height: 400px;
         }
