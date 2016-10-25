@@ -38,4 +38,9 @@ Rails.application.configure do
 
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
+  #
+
+  # For Vagrant box
+  config.web_console.whitelisted_ips = '0.0.0.0/0'
+  config.web_console.whiny_requests = false
 end
