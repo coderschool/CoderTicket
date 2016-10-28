@@ -6,6 +6,8 @@
         null,
         1,
         1,
+        1,
+        null,
         null
       ],
       "/Users/dtt22/code/coderschool/ruby/CoderTicket/spec/rails_helper.rb": [
@@ -563,6 +565,8 @@
         1,
         null,
         1,
+        null,
+        1,
         1,
         null,
         null,
@@ -635,8 +639,26 @@
       "/Users/dtt22/code/coderschool/ruby/CoderTicket/app/helpers/tickets_helper.rb": [
         1,
         null
+      ],
+      "/Users/dtt22/code/coderschool/ruby/CoderTicket/app/controllers/events_controller.rb": [
+        1,
+        1,
+        0,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null
+      ],
+      "/Users/dtt22/code/coderschool/ruby/CoderTicket/app/controllers/application_controller.rb": [
+        1,
+        null,
+        null,
+        1,
+        null
       ]
     },
-    "timestamp": 1477632197
+    "timestamp": 1477632558
   }
 }
