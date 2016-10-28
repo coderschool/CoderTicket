@@ -1,4 +1,3 @@
-# encoding: UTF-8
 # This file is auto-generated from the current state of the database. Instead
 # of editing this file, please use the migrations feature of Active Record to
 # incrementally modify your database, and then regenerate this schema definition.
@@ -32,10 +31,9 @@ ActiveRecord::Schema.define(version: 20151215104433) do
     t.string   "name"
     t.datetime "created_at",                null: false
     t.datetime "updated_at",                null: false
+    t.index ["category_id"], name: "index_events_on_category_id", using: :btree
+    t.index ["venue_id"], name: "index_events_on_venue_id", using: :btree
   end
-
-  add_index "events", ["category_id"], name: "index_events_on_category_id", using: :btree
-  add_index "events", ["venue_id"], name: "index_events_on_venue_id", using: :btree
 
   create_table "regions", force: :cascade do |t|
     t.string   "name"
@@ -50,9 +48,8 @@ ActiveRecord::Schema.define(version: 20151215104433) do
     t.integer  "max_quantity"
     t.datetime "created_at",   null: false
     t.datetime "updated_at",   null: false
+    t.index ["event_id"], name: "index_ticket_types_on_event_id", using: :btree
   end
-
-  add_index "ticket_types", ["event_id"], name: "index_ticket_types_on_event_id", using: :btree
 
   create_table "venues", force: :cascade do |t|
     t.string   "name"
@@ -60,9 +57,8 @@ ActiveRecord::Schema.define(version: 20151215104433) do
     t.integer  "region_id"
     t.datetime "created_at",   null: false
     t.datetime "updated_at",   null: false
+    t.index ["region_id"], name: "index_venues_on_region_id", using: :btree
   end
-
-  add_index "venues", ["region_id"], name: "index_venues_on_region_id", using: :btree
 
   add_foreign_key "events", "categories"
   add_foreign_key "events", "venues"
