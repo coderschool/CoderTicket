@@ -5,7 +5,7 @@
 - Submitted by: **Your Name Here**
 - Time spent: **X** hours
 - URL: **Insert your Heroku URL here**
-- SimpleCov Test Coverage: [coverage/index.html][coverage][index.html]
+- SimpleCov Test Coverage: [coverage/index.html](coverage/index.html)
 
 ## User Stories
 
