@@ -237,7 +237,7 @@ DEPENDENCIES
   jbuilder (~> 2.5)
   jquery-rails
   pg (~> 0.18)
-  puma (~> 3.0)
+  puma (~> 3.7, >= 3.7.1)
   rails (~> 5.0.0, >= 5.0.0.1)
   rails-assets-tether (>= 1.1.0)!
   rspec-rails (~> 3.5, >= 3.5.2)
