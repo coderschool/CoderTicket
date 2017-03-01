@@ -26,7 +26,7 @@ e = Event.create({
   ends_at: DateTime.parse('Sun, 13 Mar 2016 3:00 PM+0700'),
   venue: dalat,
   category: Category.find_by(name: 'Everything Else'),
-  hero_image_url: 'https://az810747.vo.msecnd.net/eventcover/2015/10/25/C6A1A5.jpg?w=1040&maxheight=400&mode=crop&anchor=topcenter',
+  hero_image_url: 'https://media.ticketbox.vn/eventcover/2015/10/25/C6A1A5.jpg?w=1040&maxheight=400&mode=crop&anchor=topcenter',
   extended_html_description: <<-DESC
     <p style="text-align:center"><span style="font-size:20px">VIỆT NAM THỬ THÁCH CHIẾN THẮNG 2016</span></p>
     <p style="text-align:center"><span style="font-size:20px">Giải đua xe đạp địa hình 11-13/03/2016</span></p>
@@ -54,7 +54,7 @@ e = Event.create({
   category: Category.find_by(name: 'Entertainment'),
   starts_at: DateTime.parse('Sat, 16 Jan 2016, 8:00 PM+0700'),
   ends_at: DateTime.parse('Sat, 16 Jan 2016, 10:30 PM+0700'),  
-  hero_image_url: 'https://az810747.vo.msecnd.net/eventcover/2015/12/11/C68636.jpg?w=1040&maxheight=400&mode=crop&anchor=topcenter',
+  hero_image_url: 'https://media.ticketbox.vn/eventcover/2015/12/11/C68636.jpg?w=1040&maxheight=400&mode=crop&anchor=topcenter',
   extended_html_description: <<-DESC
   <p style="text-align:justify"> </p>
 
@@ -62,7 +62,7 @@ e = Event.create({
 
   <p style="text-align:justify"> </p>
 
-  <p style="text-align:justify"><img src="https://az810747.vo.msecnd.net/agenda/2015/12/14/57EEE9.jpg" /></p>
+  <p style="text-align:justify"><img src="https://media.ticketbox.vn/agenda/2015/12/14/57EEE9.jpg" /></p>
 
   <p style="text-align:justify"> </p>
 
@@ -90,7 +90,7 @@ e = Event.create({
 
   <p style="text-align:justify"> </p>
 
-  <p style="text-align:justify"><img src="https://az810747.vo.msecnd.net/agenda/2015/12/14/06EAAD.jpg" /></p>
+  <p style="text-align:justify"><img src="https://media.ticketbox.vn/agenda/2015/12/14/06EAAD.jpg" /></p>
 
   <p style="text-align:justify"> </p>
 
@@ -104,7 +104,7 @@ e = Event.create({
 
   <p style="text-align:justify"> </p>
 
-  <p style="text-align:justify"><img src="https://az810747.vo.msecnd.net/agenda/2015/12/14/0714C1.jpg" /></p>
+  <p style="text-align:justify"><img src="https://media.ticketbox.vn/agenda/2015/12/14/0714C1.jpg" /></p>
 
   <p style="text-align:justify"> </p>
 
@@ -137,7 +137,7 @@ e = Event.create({
   ends_at: DateTime.parse('Thu, 24 Dec 2015, 11:00 PM+0700'),
   venue: gap,
   category: Category.find_by(name: 'Entertainment'),
-  hero_image_url:'https://az810747.vo.msecnd.net/eventcover/2015/12/12/78534E.jpg?w=1040&maxheight=400&mode=crop&anchor=topcenter',
+  hero_image_url:'https://media.ticketbox.vn/eventcover/2015/12/12/78534E.jpg?w=1040&maxheight=400&mode=crop&anchor=topcenter',
   extended_html_description: <<-DESC
          <p>
   <span style="background-color:rgb(255, 255, 255); color:rgb(20, 24, 35); font-family:helvetica,arial,sans-serif; font-size:14px">* Bạn một m&igrave;nh, bạn FA ?</span><br />
