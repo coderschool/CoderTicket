@@ -42,10 +42,6 @@ GEM
     arel (7.1.4)
     autoprefixer-rails (6.5.1.1)
       execjs
-    better_errors (2.1.1)
-      coderay (>= 1.0.0)
-      erubis (>= 2.6.6)
-      rack (>= 0.9.0)
     bootstrap (4.0.0.alpha5)
       autoprefixer-rails (>= 6.0.3)
       sass (>= 3.4.19)
@@ -124,7 +120,7 @@ GEM
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
       slop (~> 3.4)
-    puma (3.6.0)
+    puma (3.7.1)
     rack (2.0.1)
     rack-test (0.6.3)
       rack (>= 1.0)
@@ -232,7 +228,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  better_errors
   bootstrap (~> 4.0.0.alpha5)
   byebug
   coffee-rails (~> 4.1.0)

@@ -5,7 +5,7 @@ gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
 # Use pg as the database for Active Record
 gem 'pg', '~> 0.18'
 # Use Puma as the app server
-gem 'puma', '~> 3.0'
+gem 'puma', '~> 3.7', '>= 3.7.1'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -33,7 +33,6 @@ end
 
 gem 'bootstrap', '~> 4.0.0.alpha5'
 gem 'simple_form'
-gem 'better_errors', group: :development
 gem 'font-awesome-rails'
 gem 'font-kit-rails', '~> 1.2.0'
 
